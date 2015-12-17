@@ -1,0 +1,2264 @@
+
+
+************************************
+	Testing part I
+************************************
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+result:
+
+answer:
+{:d=>72, :e=>507, :f=>492, :g=>114, :h=>65412, :i=>65079, :x=>123, :y=>456}
+test Case 1 fails
+
+
+************************************
+	String search part I
+************************************
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"A", :command=>"A = LX"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"A", :command=>"A = LX"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"A", :command=>"A = LX"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"A", :command=>"A = LX"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+
+
+************************************
+	Testing part I
+************************************
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+******************
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+{:ord=>"X", :command=>"X = 123"}
+{:ord=>"Y", :command=>"Y = 456"}
+{:ord=>"D", :command=>"D = X & Y"}
+{:ord=>"E", :command=>"E = X | Y"}
+{:ord=>"F", :command=>"F = X << 2"}
+{:ord=>"G", :command=>"G = Y >> 2"}
+{:ord=>"H", :command=>"H = ~ X"}
+{:ord=>"I", :command=>"I = ~ Y"}
+result:
+
+answer:
+{:d=>72, :e=>507, :f=>492, :g=>114, :h=>65412, :i=>65079, :x=>123, :y=>456}
+test Case 1 fails
+
+
+************************************
+	String search part I
+************************************
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+******************
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+{:ord=>"A", :command=>"A = LX"}
+{:ord=>"AN", :command=>"AN = 1 & AM"}
+{:ord=>"B", :command=>"B = 1674"}
+{:ord=>"BI", :command=>"BI = 1 & BH"}
+{:ord=>"C", :command=>"C = 0"}
+{:ord=>"CD", :command=>"CD = 1 & CC"}
+{:ord=>"CY", :command=>"CY = 1 & CX"}
+{:ord=>"DT", :command=>"DT = 1 & DS"}
+{:ord=>"EO", :command=>"EO = 1 & EN"}
+{:ord=>"FJ", :command=>"FJ = 1 & FI"}
+{:ord=>"GE", :command=>"GE = 1 & GD"}
+{:ord=>"GZ", :command=>"GZ = 1 & GY"}
+{:ord=>"HU", :command=>"HU = 1 & HT"}
+{:ord=>"IP", :command=>"IP = 1 & IO"}
+{:ord=>"JK", :command=>"JK = 1 & JJ"}
+{:ord=>"KF", :command=>"KF = 1 & KE"}
+{:ord=>"LA", :command=>"LA = 1 & KZ"}
+{:ord=>"LV", :command=>"LV = 1 & LU"}
+{:ord=>"S", :command=>"S = 1 & R"}
+{:ord=>"D", :command=>"D = B >> 2"}
+{:ord=>"E", :command=>"E = B >> 3"}
+{:ord=>"F", :command=>"F = B >> 5"}
+{:ord=>"G", :command=>"G = E | F"}
+{:ord=>"H", :command=>"H = E & F"}
+{:ord=>"I", :command=>"I = ~ H"}
+{:ord=>"J", :command=>"J = G & I"}
+{:ord=>"K", :command=>"K = D | J"}
+{:ord=>"L", :command=>"L = D & J"}
+{:ord=>"M", :command=>"M = ~ L"}
+{:ord=>"N", :command=>"N = K & M"}
+{:ord=>"O", :command=>"O = B | N"}
+{:ord=>"P", :command=>"P = B & N"}
+{:ord=>"Q", :command=>"Q = ~ P"}
+{:ord=>"R", :command=>"R = O & Q"}
+{:ord=>"T", :command=>"T = C << 1"}
+{:ord=>"U", :command=>"U = T | S"}
+{:ord=>"V", :command=>"V = B >> 1"}
+{:ord=>"W", :command=>"W = S << 15"}
+{:ord=>"X", :command=>"X = V | W"}
+{:ord=>"Y", :command=>"Y = X >> 2"}
+{:ord=>"Z", :command=>"Z = X >> 3"}
+{:ord=>"AA", :command=>"AA = X >> 5"}
+{:ord=>"AB", :command=>"AB = Z | AA"}
+{:ord=>"AC", :command=>"AC = Z & AA"}
+{:ord=>"AD", :command=>"AD = ~ AC"}
+{:ord=>"AE", :command=>"AE = AB & AD"}
+{:ord=>"AF", :command=>"AF = Y | AE"}
+{:ord=>"AG", :command=>"AG = Y & AE"}
+{:ord=>"AH", :command=>"AH = ~ AG"}
+{:ord=>"AI", :command=>"AI = AF & AH"}
+{:ord=>"AJ", :command=>"AJ = X | AI"}
+{:ord=>"AK", :command=>"AK = X & AI"}
+{:ord=>"AL", :command=>"AL = ~ AK"}
+{:ord=>"AM", :command=>"AM = AJ & AL"}
+{:ord=>"AO", :command=>"AO = U << 1"}
+{:ord=>"AP", :command=>"AP = AO | AN"}
+{:ord=>"AQ", :command=>"AQ = X >> 1"}
+{:ord=>"AR", :command=>"AR = AN << 15"}
+{:ord=>"AS", :command=>"AS = AQ | AR"}
+{:ord=>"AT", :command=>"AT = AS >> 2"}
+{:ord=>"AU", :command=>"AU = AS >> 3"}
+{:ord=>"AV", :command=>"AV = AS >> 5"}
+{:ord=>"AW", :command=>"AW = AU | AV"}
+{:ord=>"AX", :command=>"AX = AU & AV"}
+{:ord=>"AY", :command=>"AY = ~ AX"}
+{:ord=>"AZ", :command=>"AZ = AW & AY"}
+{:ord=>"BA", :command=>"BA = AT | AZ"}
+{:ord=>"BB", :command=>"BB = AT & AZ"}
+{:ord=>"BC", :command=>"BC = ~ BB"}
+{:ord=>"BD", :command=>"BD = BA & BC"}
+{:ord=>"BE", :command=>"BE = AS | BD"}
+{:ord=>"BF", :command=>"BF = AS & BD"}
+{:ord=>"BG", :command=>"BG = ~ BF"}
+{:ord=>"BH", :command=>"BH = BE & BG"}
+{:ord=>"BJ", :command=>"BJ = AP << 1"}
+{:ord=>"BK", :command=>"BK = BJ | BI"}
+{:ord=>"BL", :command=>"BL = AS >> 1"}
+{:ord=>"BM", :command=>"BM = BI << 15"}
+{:ord=>"BN", :command=>"BN = BL | BM"}
+{:ord=>"BO", :command=>"BO = BN >> 2"}
+{:ord=>"BP", :command=>"BP = BN >> 3"}
+{:ord=>"BQ", :command=>"BQ = BN >> 5"}
+{:ord=>"BR", :command=>"BR = BP | BQ"}
+{:ord=>"BS", :command=>"BS = BP & BQ"}
+{:ord=>"BT", :command=>"BT = ~ BS"}
+{:ord=>"BU", :command=>"BU = BR & BT"}
+{:ord=>"BV", :command=>"BV = BO | BU"}
+{:ord=>"BW", :command=>"BW = BO & BU"}
+{:ord=>"BX", :command=>"BX = ~ BW"}
+{:ord=>"BY", :command=>"BY = BV & BX"}
+{:ord=>"BZ", :command=>"BZ = BN | BY"}
+{:ord=>"CA", :command=>"CA = BN & BY"}
+{:ord=>"CB", :command=>"CB = ~ CA"}
+{:ord=>"CC", :command=>"CC = BZ & CB"}
+{:ord=>"CE", :command=>"CE = BK << 1"}
+{:ord=>"CF", :command=>"CF = CE | CD"}
+{:ord=>"CG", :command=>"CG = BN >> 1"}
+{:ord=>"CH", :command=>"CH = CD << 15"}
+{:ord=>"CI", :command=>"CI = CG | CH"}
+{:ord=>"CJ", :command=>"CJ = CI >> 2"}
+{:ord=>"CK", :command=>"CK = CI >> 3"}
+{:ord=>"CL", :command=>"CL = CI >> 5"}
+{:ord=>"CM", :command=>"CM = CK | CL"}
+{:ord=>"CN", :command=>"CN = CK & CL"}
+{:ord=>"CO", :command=>"CO = ~ CN"}
+{:ord=>"CP", :command=>"CP = CM & CO"}
+{:ord=>"CQ", :command=>"CQ = CJ | CP"}
+{:ord=>"CR", :command=>"CR = CJ & CP"}
+{:ord=>"CS", :command=>"CS = ~ CR"}
+{:ord=>"CT", :command=>"CT = CQ & CS"}
+{:ord=>"CU", :command=>"CU = CI | CT"}
+{:ord=>"CV", :command=>"CV = CI & CT"}
+{:ord=>"CW", :command=>"CW = ~ CV"}
+{:ord=>"CX", :command=>"CX = CU & CW"}
+{:ord=>"CZ", :command=>"CZ = CF << 1"}
+{:ord=>"DA", :command=>"DA = CZ | CY"}
+{:ord=>"DB", :command=>"DB = CI >> 1"}
+{:ord=>"DC", :command=>"DC = CY << 15"}
+{:ord=>"DD", :command=>"DD = DB | DC"}
+{:ord=>"DE", :command=>"DE = DD >> 2"}
+{:ord=>"DF", :command=>"DF = DD >> 3"}
+{:ord=>"DG", :command=>"DG = DD >> 5"}
+{:ord=>"DH", :command=>"DH = DF | DG"}
+{:ord=>"DI", :command=>"DI = DF & DG"}
+{:ord=>"DJ", :command=>"DJ = ~ DI"}
+{:ord=>"DK", :command=>"DK = DH & DJ"}
+{:ord=>"DL", :command=>"DL = DE | DK"}
+{:ord=>"DM", :command=>"DM = DE & DK"}
+{:ord=>"DN", :command=>"DN = ~ DM"}
+{:ord=>"DO", :command=>"DO = DL & DN"}
+{:ord=>"DP", :command=>"DP = DD | DO"}
+{:ord=>"DQ", :command=>"DQ = DD & DO"}
+{:ord=>"DR", :command=>"DR = ~ DQ"}
+{:ord=>"DS", :command=>"DS = DP & DR"}
+{:ord=>"DU", :command=>"DU = DA << 1"}
+{:ord=>"DV", :command=>"DV = DU | DT"}
+{:ord=>"DW", :command=>"DW = DD >> 1"}
+{:ord=>"DX", :command=>"DX = DT << 15"}
+{:ord=>"DY", :command=>"DY = DW | DX"}
+{:ord=>"DZ", :command=>"DZ = DY >> 2"}
+{:ord=>"EA", :command=>"EA = DY >> 3"}
+{:ord=>"EB", :command=>"EB = DY >> 5"}
+{:ord=>"EC", :command=>"EC = EA | EB"}
+{:ord=>"ED", :command=>"ED = EA & EB"}
+{:ord=>"EE", :command=>"EE = ~ ED"}
+{:ord=>"EF", :command=>"EF = EC & EE"}
+{:ord=>"EG", :command=>"EG = DZ | EF"}
+{:ord=>"EH", :command=>"EH = DZ & EF"}
+{:ord=>"EI", :command=>"EI = ~ EH"}
+{:ord=>"EJ", :command=>"EJ = EG & EI"}
+{:ord=>"EK", :command=>"EK = DY | EJ"}
+{:ord=>"EL", :command=>"EL = DY & EJ"}
+{:ord=>"EM", :command=>"EM = ~ EL"}
+{:ord=>"EN", :command=>"EN = EK & EM"}
+{:ord=>"EP", :command=>"EP = DV << 1"}
+{:ord=>"EQ", :command=>"EQ = EP | EO"}
+{:ord=>"ER", :command=>"ER = DY >> 1"}
+{:ord=>"ES", :command=>"ES = EO << 15"}
+{:ord=>"ET", :command=>"ET = ER | ES"}
+{:ord=>"EU", :command=>"EU = ET >> 2"}
+{:ord=>"EV", :command=>"EV = ET >> 3"}
+{:ord=>"EW", :command=>"EW = ET >> 5"}
+{:ord=>"EX", :command=>"EX = EV | EW"}
+{:ord=>"EY", :command=>"EY = EV & EW"}
+{:ord=>"EZ", :command=>"EZ = ~ EY"}
+{:ord=>"FA", :command=>"FA = EX & EZ"}
+{:ord=>"FB", :command=>"FB = EU | FA"}
+{:ord=>"FC", :command=>"FC = EU & FA"}
+{:ord=>"FD", :command=>"FD = ~ FC"}
+{:ord=>"FE", :command=>"FE = FB & FD"}
+{:ord=>"FF", :command=>"FF = ET | FE"}
+{:ord=>"FG", :command=>"FG = ET & FE"}
+{:ord=>"FH", :command=>"FH = ~ FG"}
+{:ord=>"FI", :command=>"FI = FF & FH"}
+{:ord=>"FK", :command=>"FK = EQ << 1"}
+{:ord=>"FL", :command=>"FL = FK | FJ"}
+{:ord=>"FM", :command=>"FM = ET >> 1"}
+{:ord=>"FN", :command=>"FN = FJ << 15"}
+{:ord=>"FO", :command=>"FO = FM | FN"}
+{:ord=>"FP", :command=>"FP = FO >> 2"}
+{:ord=>"FQ", :command=>"FQ = FO >> 3"}
+{:ord=>"FR", :command=>"FR = FO >> 5"}
+{:ord=>"FS", :command=>"FS = FQ | FR"}
+{:ord=>"FT", :command=>"FT = FQ & FR"}
+{:ord=>"FU", :command=>"FU = ~ FT"}
+{:ord=>"FV", :command=>"FV = FS & FU"}
+{:ord=>"FW", :command=>"FW = FP | FV"}
+{:ord=>"FX", :command=>"FX = FP & FV"}
+{:ord=>"FY", :command=>"FY = ~ FX"}
+{:ord=>"FZ", :command=>"FZ = FW & FY"}
+{:ord=>"GA", :command=>"GA = FO | FZ"}
+{:ord=>"GB", :command=>"GB = FO & FZ"}
+{:ord=>"GC", :command=>"GC = ~ GB"}
+{:ord=>"GD", :command=>"GD = GA & GC"}
+{:ord=>"GF", :command=>"GF = FL << 1"}
+{:ord=>"GG", :command=>"GG = GF | GE"}
+{:ord=>"GH", :command=>"GH = FO >> 1"}
+{:ord=>"GI", :command=>"GI = GE << 15"}
+{:ord=>"GJ", :command=>"GJ = GH | GI"}
+{:ord=>"GK", :command=>"GK = GJ >> 2"}
+{:ord=>"GL", :command=>"GL = GJ >> 3"}
+{:ord=>"GM", :command=>"GM = GJ >> 5"}
+{:ord=>"GN", :command=>"GN = GL | GM"}
+{:ord=>"GO", :command=>"GO = GL & GM"}
+{:ord=>"GP", :command=>"GP = ~ GO"}
+{:ord=>"GQ", :command=>"GQ = GN & GP"}
+{:ord=>"GR", :command=>"GR = GK | GQ"}
+{:ord=>"GS", :command=>"GS = GK & GQ"}
+{:ord=>"GT", :command=>"GT = ~ GS"}
+{:ord=>"GU", :command=>"GU = GR & GT"}
+{:ord=>"GV", :command=>"GV = GJ | GU"}
+{:ord=>"GW", :command=>"GW = GJ & GU"}
+{:ord=>"GX", :command=>"GX = ~ GW"}
+{:ord=>"GY", :command=>"GY = GV & GX"}
+{:ord=>"HA", :command=>"HA = GG << 1"}
+{:ord=>"HB", :command=>"HB = HA | GZ"}
+{:ord=>"HC", :command=>"HC = GJ >> 1"}
+{:ord=>"HD", :command=>"HD = GZ << 15"}
+{:ord=>"HE", :command=>"HE = HC | HD"}
+{:ord=>"HF", :command=>"HF = HE >> 2"}
+{:ord=>"HG", :command=>"HG = HE >> 3"}
+{:ord=>"HH", :command=>"HH = HE >> 5"}
+{:ord=>"HI", :command=>"HI = HG | HH"}
+{:ord=>"HJ", :command=>"HJ = HG & HH"}
+{:ord=>"HK", :command=>"HK = ~ HJ"}
+{:ord=>"HL", :command=>"HL = HI & HK"}
+{:ord=>"HM", :command=>"HM = HF | HL"}
+{:ord=>"HN", :command=>"HN = HF & HL"}
+{:ord=>"HO", :command=>"HO = ~ HN"}
+{:ord=>"HP", :command=>"HP = HM & HO"}
+{:ord=>"HQ", :command=>"HQ = HE | HP"}
+{:ord=>"HR", :command=>"HR = HE & HP"}
+{:ord=>"HS", :command=>"HS = ~ HR"}
+{:ord=>"HT", :command=>"HT = HQ & HS"}
+{:ord=>"HV", :command=>"HV = HB << 1"}
+{:ord=>"HW", :command=>"HW = HV | HU"}
+{:ord=>"HX", :command=>"HX = HE >> 1"}
+{:ord=>"HY", :command=>"HY = HU << 15"}
+{:ord=>"HZ", :command=>"HZ = HX | HY"}
+{:ord=>"IA", :command=>"IA = HZ >> 2"}
+{:ord=>"IB", :command=>"IB = HZ >> 3"}
+{:ord=>"IC", :command=>"IC = HZ >> 5"}
+{:ord=>"ID", :command=>"ID = IB | IC"}
+{:ord=>"IE", :command=>"IE = IB & IC"}
+{:ord=>"IF", :command=>"IF = ~ IE"}
+{:ord=>"IG", :command=>"IG = ID & IF"}
+{:ord=>"IH", :command=>"IH = IA | IG"}
+{:ord=>"II", :command=>"II = IA & IG"}
+{:ord=>"IJ", :command=>"IJ = ~ II"}
+{:ord=>"IK", :command=>"IK = IH & IJ"}
+{:ord=>"IL", :command=>"IL = HZ | IK"}
+{:ord=>"IM", :command=>"IM = HZ & IK"}
+{:ord=>"IN", :command=>"IN = ~ IM"}
+{:ord=>"IO", :command=>"IO = IL & IN"}
+{:ord=>"IQ", :command=>"IQ = HW << 1"}
+{:ord=>"IR", :command=>"IR = IQ | IP"}
+{:ord=>"IS", :command=>"IS = HZ >> 1"}
+{:ord=>"IT", :command=>"IT = IP << 15"}
+{:ord=>"IU", :command=>"IU = IS | IT"}
+{:ord=>"IV", :command=>"IV = IU >> 2"}
+{:ord=>"IW", :command=>"IW = IU >> 3"}
+{:ord=>"IX", :command=>"IX = IU >> 5"}
+{:ord=>"IY", :command=>"IY = IW | IX"}
+{:ord=>"IZ", :command=>"IZ = IW & IX"}
+{:ord=>"JA", :command=>"JA = ~ IZ"}
+{:ord=>"JB", :command=>"JB = IY & JA"}
+{:ord=>"JC", :command=>"JC = IV | JB"}
+{:ord=>"JD", :command=>"JD = IV & JB"}
+{:ord=>"JE", :command=>"JE = ~ JD"}
+{:ord=>"JF", :command=>"JF = JC & JE"}
+{:ord=>"JG", :command=>"JG = IU | JF"}
+{:ord=>"JH", :command=>"JH = IU & JF"}
+{:ord=>"JI", :command=>"JI = ~ JH"}
+{:ord=>"JJ", :command=>"JJ = JG & JI"}
+{:ord=>"JL", :command=>"JL = IR << 1"}
+{:ord=>"JM", :command=>"JM = JL | JK"}
+{:ord=>"JN", :command=>"JN = IU >> 1"}
+{:ord=>"JO", :command=>"JO = JK << 15"}
+{:ord=>"JP", :command=>"JP = JN | JO"}
+{:ord=>"JQ", :command=>"JQ = JP >> 2"}
+{:ord=>"JR", :command=>"JR = JP >> 3"}
+{:ord=>"JS", :command=>"JS = JP >> 5"}
+{:ord=>"JT", :command=>"JT = JR | JS"}
+{:ord=>"JU", :command=>"JU = JR & JS"}
+{:ord=>"JV", :command=>"JV = ~ JU"}
+{:ord=>"JW", :command=>"JW = JT & JV"}
+{:ord=>"JX", :command=>"JX = JQ | JW"}
+{:ord=>"JY", :command=>"JY = JQ & JW"}
+{:ord=>"JZ", :command=>"JZ = ~ JY"}
+{:ord=>"KA", :command=>"KA = JX & JZ"}
+{:ord=>"KB", :command=>"KB = JP | KA"}
+{:ord=>"KC", :command=>"KC = JP & KA"}
+{:ord=>"KD", :command=>"KD = ~ KC"}
+{:ord=>"KE", :command=>"KE = KB & KD"}
+{:ord=>"KG", :command=>"KG = JM << 1"}
+{:ord=>"KH", :command=>"KH = KG | KF"}
+{:ord=>"KI", :command=>"KI = JP >> 1"}
+{:ord=>"KJ", :command=>"KJ = KF << 15"}
+{:ord=>"KK", :command=>"KK = KI | KJ"}
+{:ord=>"KL", :command=>"KL = KK >> 2"}
+{:ord=>"KM", :command=>"KM = KK >> 3"}
+{:ord=>"KN", :command=>"KN = KK >> 5"}
+{:ord=>"KO", :command=>"KO = KM | KN"}
+{:ord=>"KP", :command=>"KP = KM & KN"}
+{:ord=>"KQ", :command=>"KQ = ~ KP"}
+{:ord=>"KR", :command=>"KR = KO & KQ"}
+{:ord=>"KS", :command=>"KS = KL | KR"}
+{:ord=>"KT", :command=>"KT = KL & KR"}
+{:ord=>"KU", :command=>"KU = ~ KT"}
+{:ord=>"KV", :command=>"KV = KS & KU"}
+{:ord=>"KW", :command=>"KW = KK | KV"}
+{:ord=>"KX", :command=>"KX = KK & KV"}
+{:ord=>"KY", :command=>"KY = ~ KX"}
+{:ord=>"KZ", :command=>"KZ = KW & KY"}
+{:ord=>"LB", :command=>"LB = KH << 1"}
+{:ord=>"LC", :command=>"LC = LB | LA"}
+{:ord=>"LD", :command=>"LD = KK >> 1"}
+{:ord=>"LE", :command=>"LE = LA << 15"}
+{:ord=>"LF", :command=>"LF = LD | LE"}
+{:ord=>"LG", :command=>"LG = LF >> 2"}
+{:ord=>"LH", :command=>"LH = LF >> 3"}
+{:ord=>"LI", :command=>"LI = LF >> 5"}
+{:ord=>"LJ", :command=>"LJ = LH | LI"}
+{:ord=>"LK", :command=>"LK = LH & LI"}
+{:ord=>"LL", :command=>"LL = ~ LK"}
+{:ord=>"LM", :command=>"LM = LJ & LL"}
+{:ord=>"LN", :command=>"LN = LG | LM"}
+{:ord=>"LO", :command=>"LO = LG & LM"}
+{:ord=>"LP", :command=>"LP = ~ LO"}
+{:ord=>"LQ", :command=>"LQ = LN & LP"}
+{:ord=>"LR", :command=>"LR = LF | LQ"}
+{:ord=>"LS", :command=>"LS = LF & LQ"}
+{:ord=>"LT", :command=>"LT = ~ LS"}
+{:ord=>"LU", :command=>"LU = LR & LT"}
+{:ord=>"LW", :command=>"LW = LC << 1"}
+{:ord=>"LX", :command=>"LX = LW | LV"}
+{:ord=>"LY", :command=>"LY = LF >> 1"}
+{:ord=>"LZ", :command=>"LZ = LV << 15"}
+{:ord=>"MA", :command=>"MA = LY | LZ"}
+{:ord=>"A", :command=>"A = LX"}
